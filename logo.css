@@ -1,0 +1,279 @@
+html, body {
+background-color: #CCC;
+}
+
+#j {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+
+.j-out {
+    height: 70px;
+    width: 30px;
+    border-radius: 0px 0px 40px 0px;
+    border-top: 0px solid transparent;
+    border-bottom: 2px solid transparent;
+    border-left: 0px solid transparent;
+    border-right: 2px solid black;
+    transition: height 200ms, width 200ms, border-radius 200ms, border-left 200ms, border-right 200ms, border-bottom 200ms, border-top 200ms;
+}
+
+.j-in {
+    height: 42px;
+    width: 0px;
+    border-radius: 0px 0px 0px 0px;
+    border-top: 0px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-left: 0px solid transparent;
+    border-right: 2px solid black;
+    transition: height 200ms, width 200ms, border-radius 200ms, border-left 200ms, border-right 200ms, border-bottom 200ms, border-top 200ms;
+}
+
+.e {
+    height: 36px;
+    width: 30px;
+    border-radius: 0px 0px 0px 0px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 0px solid transparent;
+    transition: height 200ms, width 200ms, border-radius 200ms, border-left 200ms, border-right 200ms, border-bottom 200ms, border-top 200ms;
+}
+
+#e-dash {
+    position: absolute;
+    left: 50px;
+    top: 70px;
+    height: 0px;
+    border-top: 2px solid black;
+}
+
+.e-hidden {
+    width: 0px;
+    opacity: 0;
+    transition: width 200ms, opacity 200ms;
+}
+
+.e-shown {
+    width: 20px;
+    opacity: 1;
+    transition: width 200ms, opacity 200ms;
+}
+
+#n {
+    position: absolute;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+}
+
+.n-itial {
+    top: 50px;
+    left: 96px;
+    transform: rotate(0deg);
+    height: 40px;
+    width: 30px;
+    transition: transform 200ms, height 200ms, width 200ms, top 200ms, left 200ms;
+}
+
+.n-d {
+    top: 55px;
+    left: 94px;
+    transform: rotate(90deg);
+    height: 30px;
+    width: 36px;
+    transition: transform 200ms, height 200ms, width 200ms, top 200ms, left 200ms;
+}
+
+#n-slash {
+    position: absolute;
+    top: 50px;
+    height: 40px;
+    border-left: 2px solid black;
+}
+
+.n-itial-slash {
+    transform: skewX(38deg);
+    left: 112px;
+    transition: transform 200ms, left 200ms;
+}
+
+.n-d-slash {
+    transform: skewX(-38deg);
+    left: 113px;
+    transition: transform 200ms, left 200ms;
+}
+
+#s1 {
+    position: absolute;
+    left: 144px;
+    top: 50px;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+}
+
+.s1-init {
+    height: 25px;
+    width: 30px;
+    border-bottom: 2px solid transparent;
+    border-right: 2px solid transparent;
+    border-radius: 10px 10px 10px 0px;
+    transition: height 200ms, width 200ms, border-bottom 200ms, border-right 200ms, border-radius 200ms;
+}
+
+.s1-inter {
+    height: 18px;
+    width: 28px;
+    border-bottom: 2px solid transparent;
+    border-right: 2px solid transparent;
+    border-radius: 10px 10px 10px 0px;
+    transition: height 200ms, width 200ms, border-bottom 200ms, border-right 200ms, border-radius 200ms;
+}
+
+.s1-end {
+    height: 18px;
+    width: 28px;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    border-radius: 0px 10px 10px 0px;
+    transition: height 200ms, width 200ms, border-bottom 200ms, border-right 200ms, border-radius 200ms;
+}
+
+#s2 {
+    position: absolute;
+    border-right: 2px solid black;
+}
+
+.s2-init {
+    top: 61px;
+    height: 25px;
+    left: 142px;
+    width: 30px;
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-bottom: 2px solid black;
+    border-radius: 10px 0px 10px 10px;
+    transition: top 200ms, height 200ms, left 200ms, width 200ms, border-top 200ms, border-left 200ms, border-bottom 200ms, border-radius 200ms;
+}
+
+.s2-inter {
+    top: 70px;
+    height: 18px;
+    left: 144px;
+    width: 28px;
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-bottom: 2px solid black;
+    border-radius: 10px 0px 10px 10px;
+    transition: top 200ms, height 200ms, left 200ms, width 200ms, border-top 200ms, border-left 200ms, border-bottom 200ms, border-radius 200ms;
+}
+
+.s2-end {
+    top: 70px;
+    height: 18px;
+    left: 144px;
+    width: 28px;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom: 0px solid transparent;
+    border-radius: 0px 10px 0px 0px;
+    transition: top 200ms, height 200ms, left 200ms, width 200ms, border-top 200ms, border-left 200ms, border-bottom 200ms, border-radius 200ms;
+}
+
+#s3 {
+    position: absolute;
+    left: 144px;
+    height: 0px;
+}
+
+.s3-init {
+    transform: skewY(-32deg);
+    top: 68px;
+    width: 32px;
+    border-top: 4px solid black;
+    transition: top 200ms, width 200ms, border-top 200ms, transform 200ms;
+}
+
+.s3-inter {
+    transform: skewY(0deg);
+    top: 70px;
+    width: 32px;
+    border-top: 2px solid black;
+    transition: top 200ms, width 200ms, border-top 200ms, transform 200ms;
+}
+
+.s3-end {
+    transform: skewY(0deg);
+    top: 70px;
+    width: 0px;
+    border-top: 2px solid black;
+    transition: top 200ms, width 200ms, border-top 200ms, transform 200ms;
+}
+
+#q1 {
+    position: absolute;
+    left: 190px;
+    top: 50px;
+    width: 30px;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+}
+
+.q1-init {
+    height: 36px;
+    border-bottom: 2px solid black;
+    border-radius: 10px 10px 10px 10px;
+    transition: height 200ms, border-bottom 200ms, border-radius 200ms;
+}
+
+.q1-inter {
+    height: 36px;
+    border-bottom: 2px solid black;
+    border-radius: 10px 10px 0px 0px;
+    transition: height 200ms, border-bottom 200ms, border-radius 200ms;
+}
+
+.q1-end {
+    height: 38px;
+    border-bottom: 0px solid transparent;
+    border-radius: 10px 10px 0px 0px;
+    transition: height 200ms, border-bottom 200ms, border-radius 200ms;
+}
+
+#q2 {
+    position: absolute;
+}
+
+.q2-init {
+    top: 82px;
+    height: 8px;
+    left: 216px;
+    width: 0px;
+    border-left: 4px solid black;
+    border-top: 0px solid transparent;
+    transform: skewX(45deg);
+    transition: top 200ms, height 200ms, left 200ms, width 200ms, border-top 200ms, border-left 200ms, transform 200ms;
+}
+
+.q2-inter {
+    top: 88px;
+    height: 0px;
+    left: 192px;
+    width: 30px;
+    border-left: 0px solid transparent;
+    border-top: 2px solid black;
+    transform: skewX(0deg);
+    transition: top 200ms, height 200ms, left 200ms, width 200ms, border-top 200ms, border-left 200ms, transform 200ms;
+}
+
+.q2-end {
+    top: 70px;
+    height: 0px;
+    left: 192px;
+    width: 30px;
+    border-left: 0px solid transparent;
+    border-top: 2px solid black;
+    transform: skewX(0deg);
+    transition: top 200ms, height 200ms, left 200ms, width 200ms, border-top 200ms, border-left 200ms, transform 200ms;
+}
