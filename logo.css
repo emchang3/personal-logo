@@ -10,7 +10,7 @@ background-color: #CCC;
 
 .j-out {
     height: 70px;
-    width: 30px;
+    width: 20px;
     border-radius: 0px 0px 40px 0px;
     border-top: 0px solid transparent;
     border-bottom: 2px solid transparent;
@@ -32,7 +32,7 @@ background-color: #CCC;
 
 .e {
     height: 36px;
-    width: 30px;
+    width: 20px;
     border-radius: 0px 0px 0px 0px;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
@@ -56,7 +56,7 @@ background-color: #CCC;
 }
 
 .e-shown {
-    width: 20px;
+    width: 15px;
     opacity: 1;
     transition: width 200ms, opacity 200ms;
 }
@@ -69,18 +69,18 @@ background-color: #CCC;
 
 .n-itial {
     top: 50px;
-    left: 96px;
+    left: 82px;
     transform: rotate(0deg);
     height: 40px;
-    width: 30px;
+    width: 20px;
     transition: transform 200ms, height 200ms, width 200ms, top 200ms, left 200ms;
 }
 
 .n-d {
-    top: 55px;
-    left: 94px;
+    top: 60px;
+    left: 74px;
     transform: rotate(90deg);
-    height: 30px;
+    height: 20px;
     width: 36px;
     transition: transform 200ms, height 200ms, width 200ms, top 200ms, left 200ms;
 }
@@ -93,20 +93,20 @@ background-color: #CCC;
 }
 
 .n-itial-slash {
-    transform: skewX(38deg);
-    left: 112px;
+    transform: skewX(27deg);
+    left: 93px;
     transition: transform 200ms, left 200ms;
 }
 
 .n-d-slash {
-    transform: skewX(-38deg);
-    left: 113px;
+    transform: skewX(-27deg);
+    left: 93px;
     transition: transform 200ms, left 200ms;
 }
 
 #s1 {
     position: absolute;
-    left: 144px;
+    left: 116px;
     top: 50px;
     border-top: 2px solid black;
     border-left: 2px solid black;
@@ -114,7 +114,7 @@ background-color: #CCC;
 
 .s1-init {
     height: 25px;
-    width: 30px;
+    width: 20px;
     border-bottom: 2px solid transparent;
     border-right: 2px solid transparent;
     border-radius: 10px 10px 10px 0px;
@@ -123,7 +123,7 @@ background-color: #CCC;
 
 .s1-inter {
     height: 18px;
-    width: 28px;
+    width: 18px;
     border-bottom: 2px solid transparent;
     border-right: 2px solid transparent;
     border-radius: 10px 10px 10px 0px;
@@ -132,7 +132,7 @@ background-color: #CCC;
 
 .s1-end {
     height: 18px;
-    width: 28px;
+    width: 18px;
     border-bottom: 2px solid black;
     border-right: 2px solid black;
     border-radius: 0px 10px 10px 0px;
@@ -147,8 +147,8 @@ background-color: #CCC;
 .s2-init {
     top: 61px;
     height: 25px;
-    left: 142px;
-    width: 30px;
+    left: 114px;
+    width: 20px;
     border-top: 2px solid transparent;
     border-left: 2px solid transparent;
     border-bottom: 2px solid black;
@@ -159,8 +159,8 @@ background-color: #CCC;
 .s2-inter {
     top: 70px;
     height: 18px;
-    left: 144px;
-    width: 28px;
+    left: 116px;
+    width: 18px;
     border-top: 2px solid transparent;
     border-left: 2px solid transparent;
     border-bottom: 2px solid black;
@@ -171,8 +171,8 @@ background-color: #CCC;
 .s2-end {
     top: 70px;
     height: 18px;
-    left: 144px;
-    width: 28px;
+    left: 116px;
+    width: 18px;
     border-top: 2px solid black;
     border-left: 2px solid black;
     border-bottom: 0px solid transparent;
@@ -182,14 +182,14 @@ background-color: #CCC;
 
 #s3 {
     position: absolute;
-    left: 144px;
+    left: 116px;
     height: 0px;
 }
 
 .s3-init {
     transform: skewY(-32deg);
     top: 68px;
-    width: 32px;
+    width: 22px;
     border-top: 4px solid black;
     transition: top 200ms, width 200ms, border-top 200ms, transform 200ms;
 }
@@ -197,7 +197,7 @@ background-color: #CCC;
 .s3-inter {
     transform: skewY(0deg);
     top: 70px;
-    width: 32px;
+    width: 22px;
     border-top: 2px solid black;
     transition: top 200ms, width 200ms, border-top 200ms, transform 200ms;
 }
@@ -212,9 +212,9 @@ background-color: #CCC;
 
 #q1 {
     position: absolute;
-    left: 190px;
+    left: 148px;
     top: 50px;
-    width: 30px;
+    width: 20px;
     border-right: 2px solid black;
     border-left: 2px solid black;
     border-top: 2px solid black;
@@ -248,7 +248,7 @@ background-color: #CCC;
 .q2-init {
     top: 82px;
     height: 8px;
-    left: 216px;
+    left: 164px;
     width: 0px;
     border-left: 4px solid black;
     border-top: 0px solid transparent;
@@ -259,8 +259,8 @@ background-color: #CCC;
 .q2-inter {
     top: 88px;
     height: 0px;
-    left: 192px;
-    width: 30px;
+    left: 150px;
+    width: 20px;
     border-left: 0px solid transparent;
     border-top: 2px solid black;
     transform: skewX(0deg);
@@ -270,8 +270,8 @@ background-color: #CCC;
 .q2-end {
     top: 70px;
     height: 0px;
-    left: 192px;
-    width: 30px;
+    left: 150px;
+    width: 20px;
     border-left: 0px solid transparent;
     border-top: 2px solid black;
     transform: skewX(0deg);
