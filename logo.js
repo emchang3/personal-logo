@@ -10,7 +10,7 @@ const s3 = document.getElementById('s3');
 const q1 = document.getElementById('q1');
 const q2 = document.getElementById('q2');
 
-j.addEventListener('click', () => {
+const change = () => {
 	if (state == 'jnsq') {
         j.className = 'j-in';
         nSlash.className = 'n-d-slash';
@@ -50,4 +50,8 @@ j.addEventListener('click', () => {
         }, 200);
         state = 'jnsq';
     }
-});
+}
+
+// setInterval(change, 5000);
+
+j.addEventListener('click', change);

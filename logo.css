@@ -1,11 +1,18 @@
 html, body {
-background-color: #CCC;
+    background-color: #CCC;
+}
+
+#logo-box {
+    position: absolute;
+    width: 122px;
+    height: 65px;
+    border: 1px dotted red;
 }
 
 #j {
     position: absolute;
-    left: 50px;
-    top: 50px;
+    left: 0px;
+    top: 0px;
 }
 
 .j-out {
@@ -16,7 +23,8 @@ background-color: #CCC;
     border-bottom: 2px solid transparent;
     border-left: 0px solid transparent;
     border-right: 2px solid black;
-    transition: height 200ms, width 200ms, border-radius 200ms, border-left 200ms, border-right 200ms, border-bottom 200ms, border-top 200ms;
+    transition: all 200ms;
+    -webkit-transition: all 200ms;
 }
 
 .j-in {
@@ -27,7 +35,8 @@ background-color: #CCC;
     border-bottom: 0px solid transparent;
     border-left: 0px solid transparent;
     border-right: 2px solid black;
-    transition: height 200ms, width 200ms, border-radius 200ms, border-left 200ms, border-right 200ms, border-bottom 200ms, border-top 200ms;
+    transition: all 200ms;
+    -webkit-transition: all 200ms;
 }
 
 .e {
@@ -38,13 +47,14 @@ background-color: #CCC;
     border-bottom: 2px solid black;
     border-left: 2px solid black;
     border-right: 0px solid transparent;
-    transition: height 200ms, width 200ms, border-radius 200ms, border-left 200ms, border-right 200ms, border-bottom 200ms, border-top 200ms;
+    transition: all 200ms;
+    -webkit-transition: all 200ms;
 }
 
 #e-dash {
     position: absolute;
-    left: 50px;
-    top: 70px;
+    left: 0px;
+    top: 20px;
     height: 0px;
     border-top: 2px solid black;
 }
@@ -52,13 +62,15 @@ background-color: #CCC;
 .e-hidden {
     width: 0px;
     opacity: 0;
-    transition: width 200ms, opacity 200ms;
+    transition: all 200ms;
+    -webkit-transition: all 200ms;
 }
 
 .e-shown {
     width: 15px;
     opacity: 1;
-    transition: width 200ms, opacity 200ms;
+    transition: all 200ms;
+    -webkit-transition: all 200ms;
 }
 
 #n {
@@ -68,46 +80,50 @@ background-color: #CCC;
 }
 
 .n-itial {
-    top: 50px;
-    left: 82px;
+    top: 0px;
+    left: 32px;
     transform: rotate(0deg);
     height: 40px;
     width: 20px;
-    transition: transform 200ms, height 200ms, width 200ms, top 200ms, left 200ms;
+    transition: all 200ms;
+    -webkit-transition: all 200ms;
 }
 
 .n-d {
-    top: 60px;
-    left: 74px;
+    top: 10px;
+    left: 24px;
     transform: rotate(90deg);
     height: 20px;
     width: 36px;
-    transition: transform 200ms, height 200ms, width 200ms, top 200ms, left 200ms;
+    transition: all 200ms;
+    -webkit-transition: all 200ms;
 }
 
 #n-slash {
     position: absolute;
-    top: 50px;
+    top: 0px;
     height: 40px;
     border-left: 2px solid black;
 }
 
 .n-itial-slash {
     transform: skewX(27deg);
-    left: 93px;
-    transition: transform 200ms, left 200ms;
+    left: 43px;
+    transition: all 200ms;
+    -webkit-transition: all 200ms;
 }
 
 .n-d-slash {
     transform: skewX(-27deg);
-    left: 93px;
-    transition: transform 200ms, left 200ms;
+    left: 43px;
+    transition: all 200ms;
+    -webkit-transition: all 200ms;
 }
 
 #s1 {
     position: absolute;
-    left: 116px;
-    top: 50px;
+    left: 66px;
+    top: 0px;
     border-top: 2px solid black;
     border-left: 2px solid black;
 }
@@ -118,7 +134,8 @@ background-color: #CCC;
     border-bottom: 2px solid transparent;
     border-right: 2px solid transparent;
     border-radius: 10px 10px 10px 0px;
-    transition: height 200ms, width 200ms, border-bottom 200ms, border-right 200ms, border-radius 200ms;
+    transition: all 200ms;
+    -webkit-transition: all 200ms;
 }
 
 .s1-inter {
@@ -127,7 +144,8 @@ background-color: #CCC;
     border-bottom: 2px solid transparent;
     border-right: 2px solid transparent;
     border-radius: 10px 10px 10px 0px;
-    transition: height 200ms, width 200ms, border-bottom 200ms, border-right 200ms, border-radius 200ms;
+    transition: all 200ms;
+    -webkit-transition: all 200ms;
 }
 
 .s1-end {
@@ -136,7 +154,8 @@ background-color: #CCC;
     border-bottom: 2px solid black;
     border-right: 2px solid black;
     border-radius: 0px 10px 10px 0px;
-    transition: height 200ms, width 200ms, border-bottom 200ms, border-right 200ms, border-radius 200ms;
+    transition: all 200ms;
+    -webkit-transition: all 200ms;
 }
 
 #s2 {
@@ -145,75 +164,81 @@ background-color: #CCC;
 }
 
 .s2-init {
-    top: 61px;
+    top: 11px;
     height: 25px;
-    left: 114px;
+    left: 64px;
     width: 20px;
     border-top: 2px solid transparent;
     border-left: 2px solid transparent;
     border-bottom: 2px solid black;
     border-radius: 10px 0px 10px 10px;
-    transition: top 200ms, height 200ms, left 200ms, width 200ms, border-top 200ms, border-left 200ms, border-bottom 200ms, border-radius 200ms;
+    transition: all 200ms;
+    -webkit-transition: all 200ms;
 }
 
 .s2-inter {
-    top: 70px;
+    top: 20px;
     height: 18px;
-    left: 116px;
+    left: 66px;
     width: 18px;
     border-top: 2px solid transparent;
     border-left: 2px solid transparent;
     border-bottom: 2px solid black;
     border-radius: 10px 0px 10px 10px;
-    transition: top 200ms, height 200ms, left 200ms, width 200ms, border-top 200ms, border-left 200ms, border-bottom 200ms, border-radius 200ms;
+    transition: all 200ms;
+    -webkit-transition: all 200ms;
 }
 
 .s2-end {
-    top: 70px;
+    top: 20px;
     height: 18px;
-    left: 116px;
+    left: 66px;
     width: 18px;
     border-top: 2px solid black;
     border-left: 2px solid black;
     border-bottom: 0px solid transparent;
     border-radius: 0px 10px 0px 0px;
-    transition: top 200ms, height 200ms, left 200ms, width 200ms, border-top 200ms, border-left 200ms, border-bottom 200ms, border-radius 200ms;
+    transition: all 200ms;
+    -webkit-transition: all 200ms;
 }
 
 #s3 {
     position: absolute;
-    left: 116px;
+    left: 66px;
     height: 0px;
 }
 
 .s3-init {
-    transform: skewY(-32deg);
-    top: 68px;
+    transform: skewY(-36deg);
+    top: 18px;
     width: 22px;
     border-top: 4px solid black;
-    transition: top 200ms, width 200ms, border-top 200ms, transform 200ms;
+    transition: all 200ms;
+    -webkit-transition: all 200ms;
 }
 
 .s3-inter {
     transform: skewY(0deg);
-    top: 70px;
+    top: 20px;
     width: 22px;
     border-top: 2px solid black;
-    transition: top 200ms, width 200ms, border-top 200ms, transform 200ms;
+    transition: all 200ms;
+    -webkit-transition: all 200ms;
 }
 
 .s3-end {
     transform: skewY(0deg);
-    top: 70px;
+    top: 20px;
     width: 0px;
     border-top: 2px solid black;
-    transition: top 200ms, width 200ms, border-top 200ms, transform 200ms;
+    transition: all 200ms;
+    -webkit-transition: all 200ms;
 }
 
 #q1 {
     position: absolute;
-    left: 148px;
-    top: 50px;
+    left: 98px;
+    top: 0px;
     width: 20px;
     border-right: 2px solid black;
     border-left: 2px solid black;
@@ -224,21 +249,24 @@ background-color: #CCC;
     height: 36px;
     border-bottom: 2px solid black;
     border-radius: 10px 10px 10px 10px;
-    transition: height 200ms, border-bottom 200ms, border-radius 200ms;
+    transition: all 200ms;
+    -webkit-transition: all 200ms;
 }
 
 .q1-inter {
     height: 36px;
     border-bottom: 2px solid black;
     border-radius: 10px 10px 0px 0px;
-    transition: height 200ms, border-bottom 200ms, border-radius 200ms;
+    transition: all 200ms;
+    -webkit-transition: all 200ms;
 }
 
 .q1-end {
     height: 38px;
     border-bottom: 0px solid transparent;
     border-radius: 10px 10px 0px 0px;
-    transition: height 200ms, border-bottom 200ms, border-radius 200ms;
+    transition: all 200ms;
+    -webkit-transition: all 200ms;
 }
 
 #q2 {
@@ -246,34 +274,37 @@ background-color: #CCC;
 }
 
 .q2-init {
-    top: 82px;
+    top: 32px;
     height: 8px;
-    left: 164px;
+    left: 114px;
     width: 0px;
     border-left: 4px solid black;
     border-top: 0px solid transparent;
     transform: skewX(45deg);
-    transition: top 200ms, height 200ms, left 200ms, width 200ms, border-top 200ms, border-left 200ms, transform 200ms;
+    transition: all 200ms;
+    -webkit-transition: all 200ms;
 }
 
 .q2-inter {
-    top: 88px;
+    top: 38px;
     height: 0px;
-    left: 150px;
+    left: 100px;
     width: 20px;
     border-left: 0px solid transparent;
     border-top: 2px solid black;
     transform: skewX(0deg);
-    transition: top 200ms, height 200ms, left 200ms, width 200ms, border-top 200ms, border-left 200ms, transform 200ms;
+    transition: all 200ms;
+    -webkit-transition: all 200ms;
 }
 
 .q2-end {
-    top: 70px;
+    top: 20px;
     height: 0px;
-    left: 150px;
+    left: 100px;
     width: 20px;
     border-left: 0px solid transparent;
     border-top: 2px solid black;
     transform: skewX(0deg);
-    transition: top 200ms, height 200ms, left 200ms, width 200ms, border-top 200ms, border-left 200ms, transform 200ms;
+    transition: all 200ms;
+    -webkit-transition: all 200ms;
 }
